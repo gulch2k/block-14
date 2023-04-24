@@ -1,0 +1,24 @@
+// create a function that accepts a string of lowercase letters. 
+// print the word followed by how many consontant and vowels that it has.
+// "a" "e" "i" "o" "u" are consided vowels.
+// every other letter is a consonant.
+// Define two variables that keep track of the number of consontant and vowels.
+
+
+let str = "hello";
+
+let vowels = 0;
+
+let consonants = 0;
+
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === "a" || str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u") {
+        vowels++;
+    } else {
+        consonants++;
+    }
+}
+
+if (vowels && consonants > 0) {
+    console.log(str + " has " + vowels + " vowels and " + consonants + " consonants.");
+}
